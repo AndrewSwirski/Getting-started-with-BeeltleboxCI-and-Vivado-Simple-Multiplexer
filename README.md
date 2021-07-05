@@ -9,7 +9,7 @@ This is a tutorial designed to show to get started using BeetleboxCI and Vivado,
 
 ## Overview
 
-Multiplexers are one of the most fundamental devices in digital design and are found in a large amount of different applications. Its simplistic design and near ubiquity makes it a great example for getting started with BeetleboxCI. A multiplexer selects one of several different input signals<code>i0-3</code> and uses that input as its output<code>bitout</code>. The selection is based on a seperate input known as select or <code>sel</code>. Multiplexers may be represented as a logic table:
+Multiplexers are one of the most fundamental devices in digital design and are found in a large amount of different applications. Its simplistic design and near ubiquity makes it a great example for getting started with BeetleboxCI. A multiplexer selects one of several different input signals<code>i0-3</code> and uses that input as its output<code>bitout</code>. The selection is based on a seperate input known as select or <code>sel</code>. Multiplexers may be represented as a logic table: 
 
 | Sel1        | Sel0        | Output      |
 | ----------- | ----------- | ----------- |
