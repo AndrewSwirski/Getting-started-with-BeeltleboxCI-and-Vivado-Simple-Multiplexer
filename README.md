@@ -30,6 +30,19 @@ In this tutorial, we will show how to implement a simple multiplexer and simulat
  - Vivado may be installed as part of the Vitis (SW Developer) from [Xilinx's website, which may be found here.](https://www.xilinx.com/support/download.html)
  - A BeetleboxCI account. Access may be requested from here.
 
+## Quick Start
+If you wish to skip the tutorial and go straight to a working example. Please perform the following steps:
+1. Fork the repository and clone it on to your local computer. [A guide may be found here.](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+2. Connect the git repository to your BeetleboxCI account:
+   1. On the <code>project</code> page of BeetleboxCI, click <code>Add Project</code>.
+   2. Fill in the <code>Project Name</code> with <code>simple-multiplexer</code>. Also provide the <code>Git organisation name</code> with the Github account that was forked to. Fill in the <code>Git repo name</code> with <code>Getting-started-with-BeeltleboxCI-and-Vivado-Simple-Multiplexer</code>.
+3. In the Github repository, go to <code>Settings</code>-><code>Webhooks</code> Copy the payload url from BeetleboxCI to the github settings then change the content type to <code>application/json</code>, then copy over the secret from the CI to Github, then click <code>Add webhook</code>.
+4. We should then see a green tick to say the git repo has connected correctly.
+5. Now in the Github Settings, navigate to the <code>Deploy keys</code> and click <code>Add deploy keys</code>
+6. Title the deploy key <code>testci</code> and copy and paste the deploy key from the CI into the key input. Then click finish.
+7. To run the workflow, simply create a commit, which will trigger the process.
+8. Go back to <code>projects</code> and watch the workflow progress. 
+
 ## Design
 1. Create a directory called workspace in the Vivado folder and change it to be the current working directory. Then we may launch Vivado. The following script assumes that Vivado was installed in the default directory. If it was not, then use the correct installation directory. 
 
@@ -52,8 +65,6 @@ Now we have verified our Multiplexer locally, we will integrate it with Beetlebo
 
 1. [Create a new Github Repository.](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line) Name the repository <code>test_fast_CI</code>. and upload the project to it.
 2. [Now log into your BeetleboxCI account here.](https://app.beetleboxci.com/)
-
-
 
 7. Fill in the details then click <code>Submit</code>. You will be presented with your personal github webhook and deploy key information.
 
